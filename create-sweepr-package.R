@@ -2,6 +2,7 @@
 library(devtools)
 library(NCmisc)
 library(roxygen2)
+library(klippy)
 
 # Create package
 create(path = "c:/users/joel/google drive/github/sweepr")
@@ -10,7 +11,7 @@ create(path = "c:/users/joel/google drive/github/sweepr")
 use_description(fields = list(
 	Language = "en",
 	Title = "Run Parameter Sweeps on SEIR Models",
-	Version = "0.11.6",
+	Version = "0.11.7",
 	Description = "Runs SEIR model and performs parameter sweeps on SEIR model output.",
 	`Authors@R` = c(
 		person("Claude", "Nadeau", email = "claude.nadeau.statcan@gccollaboration.ca", role = c("aut")),
@@ -48,6 +49,7 @@ use_package("triangle", "Imports")
 # Add suggested packages to the DESCRIPTION file
 use_package("knitr", "Suggests")
 use_package("rmarkdown", "Suggests")
+use_package("klippy", "Suggests")
 
 # Create documentation
 document()
