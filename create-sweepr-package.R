@@ -89,10 +89,9 @@ build_vignettes()
 build()
 
 # Build PDF manual
+#tinytex::install_tinytex()
 library(tinytex)
-
-# Ensure pdflatex can be found
-tinytex::install_tinytex()
+tinytex:::is_tinytex()
 Sys.which("pdflatex")
 
 build_manual("c:/users/joel/google drive/github/sweepr", path = "c:/users/joel/google drive/github/sweepr")
