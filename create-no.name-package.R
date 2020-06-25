@@ -5,14 +5,14 @@ library(NCmisc)
 library(roxygen2)
 
 # Create package
-create(path = "c:/users/joel/google drive/github/sweepr")
+create(path = "c:/users/joel/google drive/github/no.name")
 
 # Customize the DESCRIPTION file
 use_description(fields = list(
 	Language = "en",
-	Title = "Run Parameter Sweeps on SEIR Models",
-	Version = "0.12.0",
-	Description = "Runs SEIR model and performs parameter sweeps on SEIR model output.",
+	Title = "Fit Box/Compartment Models Via Excel",
+	Version = "12.01",
+	Description = "This package enables users to fit box/compartment models via an Excel workbook. ODE (ordinary differential equation) or CTMC (continuous-time Markov chain) models can be fitted. ODE models can be fitted for multiple age groups. This package also provides tools for users to perform sensitivity analsyes/parameter sweeps on their models and to visualize model results.",
 	`Authors@R` = c(
 		person(given = "Claude", family = "Nadeau", email = "claude.nadeau.statcan@gccollaboration.ca", role = c("aut", "cre")),
 		person(given = "Maikol", family = "Diasparra", email = "maikol.diasparra.statcan@gccollaboration.ca", role = c("aut")),
@@ -68,13 +68,13 @@ library(readxl)
 library(scales)
 library(tidyr)
 library(triangle)
-functions1 <- list.functions.in.file("c:/users/joel/google drive/github/sweepr/r/plotting.functions.R")
-functions2 <- list.functions.in.file("c:/users/joel/google drive/github/sweepr/r/seir.functions.R")
+functions1 <- list.functions.in.file("c:/users/joel/google drive/github/no.name/r/plotting.functions.R")
+functions2 <- list.functions.in.file("c:/users/joel/google drive/github/no.name/r/seir.functions.R")
 
 # Create demo data
-load("c:/users/joel/google drive/github/r-package-sources/parameter-sweep-demo.RData")
-sweepr.demo <- list(parameters = parms.tried.df, results = outcomes.summary.df)
-use_data(sweepr.demo)
+load("c:/users/joel/google drive/github/r-package-sources/no.name-demo-data.RData")
+no.name.demo <- list(parameters = parms.tried.df, results = outcomes.summary.df)
+use_data(no.name.demo)
 
 # Run a check on the package
 check()
@@ -91,4 +91,4 @@ library(tinytex)
 tinytex:::is_tinytex()
 Sys.which("pdflatex")
 
-build_manual("c:/users/joel/google drive/github/sweepr", path = "c:/users/joel/google drive/github/sweepr")
+build_manual("c:/users/joel/google drive/github/no.name", path = "c:/users/joel/google drive/github/r-package-sources")
