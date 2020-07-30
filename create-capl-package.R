@@ -9,7 +9,7 @@ create(path = "c:/users/joel/google drive/github/capl")
 use_description(fields = list(
   Language = "en",
   Title = "Compute and visualize CAPL-2 scores and interpretations",
-  Version = "1.3",
+  Version = "1.32",
   Description = "This package contains tools to compute and visualize CAPL-2 (Canadian Assessment of Physical Literacy, Second Edition; www.capl-eclp.ca) scores and interpretations from raw data.",
   `Authors@R` = c(
     person(given = "Joel", family = "Barnes", email = "j@barnzilla.ca", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7621-9020")),
