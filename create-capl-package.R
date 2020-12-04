@@ -1,15 +1,15 @@
 # Load packages
-package_names <- c("devtools", "NCmisc", "klippy", "roxygen2")
+package_names <- c("devtools", "NCmisc", "roxygen2")
 load_packages <- lapply(package_names, require, character.only = TRUE)
 
 # Create package
-create(path = "c:/users/joel/google drive/github/capl")
+create(path = "c:/users/joelb/onedrive/github/capl")
 
 # Customize the DESCRIPTION file
 use_description(fields = list(
   Language = "en",
   Title = "Compute and visualize CAPL-2 scores and interpretations",
-  Version = "1.32",
+  Version = "1.33",
   Description = "This package contains tools to compute and visualize CAPL-2 (Canadian Assessment of Physical Literacy, Second Edition; www.capl-eclp.ca) scores and interpretations from raw data.",
   `Authors@R` = c(
     person(given = "Joel", family = "Barnes", email = "j@barnzilla.ca", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7621-9020")),
@@ -36,7 +36,6 @@ use_package("stats", "Imports")
 use_package("writexl", "Imports")
 
 # Add suggested packages to the DESCRIPTION file
-use_package("klippy", "Suggests")
 use_package("knitr", "Suggests")
 use_package("rmarkdown", "Suggests")
 
@@ -127,7 +126,7 @@ check()
 build_vignettes()
 
 # Build package
-build("c:/users/joel/google drive/github/capl", path = "c:/users/joel/google drive/github/r-package-sources")
+build("c:/users/joelb/onedrive/github/capl", path = "c:/users/joelb/onedrive/github/r-package-sources")
 
 # Build PDF manual
 #tinytex::install_tinytex()
